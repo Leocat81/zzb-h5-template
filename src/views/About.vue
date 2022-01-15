@@ -12,4 +12,3 @@ export default class About extends Vue {
     @State(state => state.system.token) token!: string
 }
 </script>
- 

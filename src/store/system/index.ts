@@ -1,14 +1,17 @@
 import Vue from "vue"
 import Vuex from "vuex"
+import db from "@/utils/db"
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+export default {
+    namespaced: true,
     state: {
-        token: "123123",
+        token: db.get("token"),
     },
     mutations: {
-        setToken(state, params) {
-            state.token = params
+        setToken(state: any, value: string) {
+            state.token = value
+            db.set("token", value)
         },
     },
-})
+}

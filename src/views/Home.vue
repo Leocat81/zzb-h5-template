@@ -8,9 +8,8 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator"
-import { Mutation, namespace } from "vuex-class"
+import { namespace } from "vuex-class"
 const system = namespace("system")
-debugger
 @Component
 export default class Home extends Vue {
     @system.Mutation("setToken") setToken!: (T: string) => void
