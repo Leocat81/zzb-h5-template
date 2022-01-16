@@ -2,7 +2,6 @@
     <div class="home">
         home
         <van-button type="primary" @click="login">点击登录</van-button>
-        <van-button type="primary" @click="getProfile">获取个人资料</van-button>
     </div>
 </template>
 
