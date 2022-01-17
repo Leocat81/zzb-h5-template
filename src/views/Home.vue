@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        home
+        <span class="text">home</span>
         <van-button type="primary" @click="login">点击登录</van-button>
     </div>
 </template>
@@ -24,3 +24,8 @@ export default class Home extends Vue {
     }
 }
 </script>
+<style lang="scss" scoped>
+.text {
+    color: $highlight-color;
+}
+</style>
