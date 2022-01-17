@@ -33,7 +33,7 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-  ],
+, "src/vant-components/test.mjs"  ],
   "exclude": [
     "node_modules"
   ]
